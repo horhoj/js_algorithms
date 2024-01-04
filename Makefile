@@ -26,6 +26,9 @@ tests:
 
 ddev: docker-up install dev
 
+dtests: docker-up install tests
+	
+
 
 install:
 	docker-compose run --user $(shell id -u):$(shell id -g)  node sh -c "npm i"
